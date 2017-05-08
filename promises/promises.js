@@ -84,7 +84,7 @@ function createPromisesArr(data) {
     while (ch<='z') {
         promiseArr.push(findAllPositions(data, ch).catch(err => console.log(err)));
         ch = String.fromCharCode(ch.charCodeAt(0)+1);
-    } 
+    }
     return promiseArr;
 }
 
